@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "opencv4.4.0 compile task",
+            "command": "D:/Softwares/Vscode_correlation/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+                "D:\\Softwares\\Vscode_correlation\\opencv-4.4.0\\build\\install\\x64\\mingw\\bin\\libopencv_world440.dll",
+                "-I",  "D:\\Softwares\\Vscode_correlation\\opencv-4.4.0\\build\\install\\include",
+                "-I",  "D:\\Softwares\\Vscode_correlation\\opencv-4.4.0\\build\\install\\include\\opencv2"
+            ],
+            "options": {
+                "cwd": "D:\\Softwares\\Vscode_correlation\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
